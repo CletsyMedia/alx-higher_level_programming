@@ -6,3 +6,17 @@ In the realm of ones and zeros, a language with charm, python's the name, it'll 
 
 From humble beginnings, Guido van Rossum's dream took flight,
 Python emerged, a beacon of light. For newbies and pros alike, it opens the door, in libraries galore, knowledge to store. Web, data, AI, or scripts that amaze, python's the canvas where creativity plays.
+
+## Journey Through the Code Maze: Understanding Our Directory Layout 🚶‍♂️🏞️
+
+In our code realm, directories bear names inspired by central concepts, each one a sequential step on your coding odyssey. Within, README.md files illuminate the path, revealing the brilliance of ideas along this poetic code journey.
+
+| #  | Topic                                      | Description                                           |
+| -- | ------------------------------------------ | ----------------------------------------------------- |
+| 1  | [Hello_world](./0x00-python-hello_world)          | The grand "Hello, World!" introduction to coding delight. |
+
+## Prerequisites
+
+## Author
+
+&copy; All Rights Reserved [Cletus Samuel](https://cletsymedia.github.io/Prof-Portfolio/)

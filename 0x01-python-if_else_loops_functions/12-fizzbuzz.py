@@ -11,6 +11,9 @@ def fizzbuzz():
         else:
             print(num, end=" ")
 
+# Add two blank lines after the function definition.
+
+
 # Check if the script is running interactively before printing.
 if __name__ == "__main__":
     fizzbuzz()

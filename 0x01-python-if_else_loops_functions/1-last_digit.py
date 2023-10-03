@@ -11,4 +11,4 @@ elif last_num == 0:
 else:
     msg = "and is less than 6 and not 0"
 # Printing the result
-print(f"Last digit of {number} is {last_num} {msg}")
+print(f"Last digit of {number:d} is {last_num} {msg}")

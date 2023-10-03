@@ -16,6 +16,3 @@ def uppercase(s):
     # Print the result followed by a new line.
     print(result, end="\n")
 
-# Test cases
-uppercase("best")
-uppercase("Best School 98 Battery street")

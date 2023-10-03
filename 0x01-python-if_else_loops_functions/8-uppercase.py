@@ -15,8 +15,3 @@ def uppercase(str):
 
     # Print the result string followed by a new line.
     print(result)
-
-
-# Test cases
-uppercase("best")
-uppercase("Best School 98 Battery street")

@@ -9,6 +9,6 @@ for a in range(100):
         print("0{}".format(a), end=", " if a != 99 else "\n")
     else:
         # If the number is 10 or greater, print it without a leading zero.
-        # Use end=", " if it's not the last number; otherwise, 
+        # Use end=", " if it's not the last number; otherwise,
         # use end="\n" to start a new line.
         print(a, end=", " if a != 99 else "\n")

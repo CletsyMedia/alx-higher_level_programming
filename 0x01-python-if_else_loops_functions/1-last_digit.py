@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 import random
 
-# Generate a random number and assign it to the 'number' variable
+# Keep the random number generation line unchanged
 number = random.randint(-10000, 10000)
 
 # Calculate the last digit of the number
 last_digit = abs(number) % 10
 
-# Determine the message based on the last digit
+# Determine the appropriate message
 if last_digit > 5:
-    message = "greater than 5"
+    message = "and is greater than 5"
 elif last_digit == 0:
-    message = "0"
+    message = "and is 0"
 else:
-    message = "less than 6 and not 0"
+    message = "and is less than 6 and not 0"
 
-# Print the result with the required format
-print(f"Last digit of {number} is {last_digit} and is {message}")
+# Print the result
+if number < 0:
+    last_digit = -last_digit
+print(f"Last digit of {number:d} is {last_digit:d} {message}")

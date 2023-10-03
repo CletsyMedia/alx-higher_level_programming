@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 import random
+
+# Generate a random number and assign it to the 'number' variable
 number = random.randint(-10000, 10000)
 
-# Calculate the last digit
-last_num = abs(number) % 10
+# Calculate the last digit of the number
+last_digit = abs(number) % 10
 
-# Define a function to determine the message based on the last digit
-def get_msg(last_num):
-    if last_num > 5:
-        return "greater than 5"
-    elif last_num == 0:
-        return "0"
-    else:
-        return "less than 6 and not 0"
+# Determine the message based on the last digit
+if last_digit > 5:
+    message = "greater than 5"
+elif last_digit == 0:
+    message = "0"
+else:
+    message = "less than 6 and not 0"
 
-# Print the result
-print(f"Last digit of {number} is {last_num} and is {get_msg(last_num)}\n")
+# Print the result with the required format
+print(f"Last digit of {number} is {last_digit} and is {message}")

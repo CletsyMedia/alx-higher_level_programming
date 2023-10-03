@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def uppercase(str):
     # Initialize an empty result string.
     result = ""
@@ -15,3 +15,8 @@ def uppercase(str):
 
     # Print the result string followed by a new line.
     print(result)
+
+
+# Test cases
+uppercase("best")
+uppercase("Best School 98 Battery street")

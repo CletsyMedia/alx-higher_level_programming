@@ -9,12 +9,12 @@ def magic_calculation(a, b):
         c = add(a, b)
 
         # Iterate over a range from 4 to 6 (inclusive).
-        for i in range(4, 7):
+        for i in range(4, 6):
             # Add 'i' to 'c' and store the result in 'c'.
             c = add(c, i)
 
         # Return the final result 'c'.
         return c
     else:
-        # If 'a' is greater than or equal to 'b', subtract 'b' from 'a' and return the result.
+        # If 'a' >= to 'b', subtract 'b' from 'a' and return the result.
         return sub(a, b)

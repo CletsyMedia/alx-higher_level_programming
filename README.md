@@ -14,7 +14,10 @@ In our code realm, directories bear names inspired by central concepts, each one
 | #  | Topic                                      | Description                                           |
 | -- | ------------------------------------------ | ----------------------------------------------------- |
 | 1  | [Hello_world](./0x00-python-hello_world)          | The grand "Hello, World!" introduction to coding delight. |
-| 2  | [if/else, loops](./0x01-python-if_else_loops_functions)      | Where logic weaves the right choices with loops they dance and never tire.|
+| 2  | [If/else, loops](./0x01-python-if_else_loops_functions)      | Where logic weaves the right choices with loops they dance and never tire.|
+| 3  | [Import & modules](./0x02-python-import_modules)      | A symphony of logic, where imports unite, modules harmonize, code's endless flight
+together they dance, hand in hand. 🎶✨ |
+
 
 ## Prerequisites
 

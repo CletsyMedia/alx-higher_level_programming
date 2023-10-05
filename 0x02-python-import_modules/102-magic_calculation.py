@@ -4,7 +4,7 @@ def magic_calculation(a, b):
 
     # Check if a is less than b
     if a < b:
-        # Import the 'add' and 'sub' functions from 'magic_calculation_102' module
+        # Import the 'add' and 'sub' functions from 'magic_calculation_102'
         add = __import__('magic_calculation_102').add
         sub = __import__('magic_calculation_102').sub
 
@@ -18,5 +18,5 @@ def magic_calculation(a, b):
         # Return the final result
         return c
 
-    # If a is not less than b, perform the 'sub' operation and return the result
+    # If a != less than b, perform the 'sub' operation and return the result
     return sub(a, b)

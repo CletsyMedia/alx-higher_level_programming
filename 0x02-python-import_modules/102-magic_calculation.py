@@ -1,22 +1,16 @@
 def magic_calculation(a, b):
-    # Initialize add and sub to None
-    add, sub = None, None
+    # Initialize 'add' and 'sub' variables to None.
+    add = None
+    sub = None
 
-    # Check if a is less than b
+    # Check if 'a' is less than 'b'.
     if a < b:
-        # Import the 'add' and 'sub' functions from 'magic_calculation_102'
-        add = __import__('magic_calculation_102').add
-        sub = __import__('magic_calculation_102').sub
+        # Import 'add' and 'sub' functions from 'magic_calculation_102'.
+        from magic_calculation_102 import add, sub
 
-        # Perform the 'add' operation with a and b
-        c = add(a, b)
-
-        # Loop from 4 to 5 (inclusive) and add each value to 'c'
-        for i in range(4, 6):
-            c = add(c, i)
-
-        # Return the final result
-        return c
-
-    # If a != less than b, perform the 'sub' operation and return the result
-    return sub(a, b)
+        # Call 'add' function with arguments 'a' and 'b'.
+        return add(a, b)
+    else:
+        # If 'a' is greater than or equal to 'b', call 'sub'
+        # function with arguments 'a' and 'b'.
+        return sub(a, b)

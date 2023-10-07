@@ -1,11 +1,25 @@
 #!/usr/bin/python3
+
 def print_matrix_integer(matrix=[[]]):
-    # Iterate through the rows and columns of the matrix
+    """
+    Print a matrix of integers in the specified format.
+
+    Args:
+        matrix (list of lists): The matrix of integers to be printed.
+
+    Format:
+        Each row is printed on a separate line, with integers separated by spaces.
+
+    Example:
+        For matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]:
+        Output:
+            1 2 3
+            4 5 6
+            7 8 9
+
+    If the matrix is empty, an empty line is printed.
+    """
     for row in matrix:
-        for i, num in enumerate(row):
-            if i != len(row) - 1:
-                print("{:d} ".format(num), end='') # Print integers with space
-            else:
-                print("{:d}".format(num)) # Print the last integer on the row
+        print(" ".join("{:d}".format(num) for num in row))
     if not matrix:
-        print()  # Print an empty line if the matrix is empty
+        print()

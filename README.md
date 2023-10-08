@@ -13,10 +13,10 @@ In this code realm, directories bear names inspired by central concepts, each on
 
 | #  | Topic                                      | Description                                           |
 | -- | ------------------------------------------ | ----------------------------------------------------- |
-| 1  | [Hello_world](./0x00-python-hello_world)          | The grand "Hello, World!" introduction to coding delight. ✨🌍 |
-| 2  | [If/else, loops](./0x01-python-if_else_loops_functions)      | Where logic weaves the right choices with loops they dance and never tire. 🤔🔄 |
-| 3  | [Import & modules](./0x02-python-import_modules)      | Where imports unite, modules harmonize, code's together they dance, hand in hand. 🧩🤝 |
-| 4  | [Data_Structures](./0x03-python-data_structures)      | In the realm of data structure, lists and tuples create a harmonious dance. 🕺💃|
+| 0  | [Hello_world](./0x00-python-hello_world)          | The grand "Hello, World!" introduction to coding delight. ✨🌍 |
+| 1  | [If/else, loops](./0x01-python-if_else_loops_functions)      | Where logic weaves the right choices with loops they dance and never tire. 🤔🔄 |
+| 2  | [Import & modules](./0x02-python-import_modules)      | Where imports unite, modules harmonize, code's together they dance, hand in hand. 🧩🤝 |
+| 3  | [Data_Structures](./0x03-python-data_structures)      | In the realm of data structure, lists and tuples create a harmonious dance. 🕺💃|
 
 ## Prerequisites
 

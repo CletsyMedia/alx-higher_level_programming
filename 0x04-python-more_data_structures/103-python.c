@@ -1,49 +1,26 @@
-#include <Python.h>
-#include <object.h>
-#include <listobject.h>
-#include <bytesobject.h>
-
-void print_python_bytes(PyObject *p)
+#include "Python.h"
+/**
+  * print_python_list_info - Prints information about python objects
+  * @p: PyObject pointer to print info about
+  * Compile with:
+  * gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c
+  */
+void print_python_list_info(PyObject *p)
 {
-	long int size;
-	int i;
-	char *trying_str = NULL;
+	Py_ssize_t i, py_list_size;
+	PyObject *item;
+	const char *item_type;
+	PyListObject *list_object_cast;
 
-	printf("[.] bytes object info\n");
-	if (!PyBytes_Check(p))
+	list_object_cast = (PyListObject *)p;
+	py_list_size = PyList_Size(p);
+
+	printf("[*] Size of the Python List = %d\n", (int) py_list_size);
+	printf("[*] Allocated = %d\n", (int)list_object_cast->allocated);
+	for (i = 0; i < py_list_size; i++)
 	{
-	printf("	[ERROR] Invalid Bytes Object\n");
-	return;
-	}
-
-	PyBytes_AsStringAndSize(p, &trying_str, &size);
-
-	printf("	size: %li\n", size);
-	printf("	trying string: %s\n", trying_str);
-	if (size < 10)
-	printf("	first %li bytes:", size + 1);
-	else
-	printf("	first 10 bytes:");
-	for (i = 0; i <= size && i < 10; i++)
-	printf(" %02hhx", trying_str[i]);
-	printf("\n");
-}
-
-void print_python_list(PyObject *p)
-{
-	long int size = PyList_Size(p);
-	int i;
-	PyListObject *list = (PyListObject *)p;
-	const char *type;
-
-	printf("[*] Python list info\n");
-	printf("[*] Size of the Python List = %li\n", size);
-	printf("[*] Allocated = %li\n", list->allocated);
-	for (i = 0; i < size; i++)
-	{
-	type = (list->ob_item[i])->ob_type->tp_name;
-	printf("Element %i: %s\n", i, type);
-	if (!strcmp(type, "bytes"))
-	print_python_bytes(list->ob_item[i]);
+		item = PyList_GetItem(p, i);
+		item_type = (PyObject*(item))->ob_size->tp_name;
+		printf("Element %d: %s\n", (int) i, item_type);
 	}
 }

@@ -1,13 +1,7 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    unique_add = set()  # Create a set to store unique integers
-    sum = 0  # Initialize the total sum to zero
-    # Iterate through the list
-    for num in my_list:
-       # Check if the integer is not in the set
-        if num not in unique_add:
-           # Add the unique integer to the set
-            unique_add.add(num)
-            # Add the unique integer to the sum num
-            sum += num
-    return sum
+    # Create a set from the list to automatically remove duplicates
+    unique_set = set(my_list)
+    total = sum(unique_set) # Use the sum function to add all unique integers
+
+    return total  # Return the sum of unique integers

@@ -25,20 +25,14 @@ class Square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
-        if not isinstance(size, int):
-            """
-            Raises:
-                TypeError: If size is not an integer.
-            """
+       """ if statement """
+        if type(size) != int:
+            """ raise an error """
             raise TypeError("size must be an integer")
         elif size < 0:
-            """
-            Raises:
-                ValueError: If size is less than 0.
-            """
+            """ raise an error """
             raise ValueError("size must be >= 0")
         else:
-            """
-            Initialize __size of self with size.
-            """
+            """ initialize __size of self with size """
             self.__size = size
+            

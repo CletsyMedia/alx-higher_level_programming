@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    """An empty class that represents a rectangle"""
+    """ This class defines a rectangle. It's currently an empty class. """
     pass

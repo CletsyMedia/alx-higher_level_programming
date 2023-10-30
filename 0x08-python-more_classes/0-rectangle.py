@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 
-# Define the Rectangle class
 class Rectangle:
+    """
+    This class defines a rectangle.
+    It's currently an empty class.
+    """
     pass
 
+my_rectangle = Rectangle()
+
+# Print the type and attributes of my_rectangle
+print(type(my_rectangle))
+print(my_rectangle.__dict__)

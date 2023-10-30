@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+Defines Rectangle class
+"""
+
 
 class Rectangle:
-    """Define a rectangle."""
+    """Rectangle class that defines a rectangle."""
 
     def __init__(self, width=0, height=0):
         """Initialize a rectangle.
@@ -91,9 +95,8 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 ret += '#'
-            if i < self.__height - 1:
-                ret += '\n'
-        return ret
+            ret += '\n'
+        return ret[:-1]
 
     def __repr__(self):
         """Return a string representation that can be used to recreate the object.

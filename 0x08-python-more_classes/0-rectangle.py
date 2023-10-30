@@ -3,8 +3,7 @@
 
 class Rectangle:
     """
-    This class defines a rectangle.
-    It's currently an empty class.
+    An empty class that defines a rectangle. It's currently an empty class.
     """
     pass
 

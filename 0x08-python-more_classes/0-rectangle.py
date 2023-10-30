@@ -2,7 +2,7 @@
 """A class that defines a rectangle"""
 
 class Rectangle:
-    """An empty class defines a rectangle. It's currently an empty class. """
+    """An empty class represent a rectangle. It's currently an empty class. """
     
     pass
 

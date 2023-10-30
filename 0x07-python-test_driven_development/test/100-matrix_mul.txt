@@ -1,0 +1,60 @@
+"""
+How to Use 100-matrix_mul.py
+============================
+
+This module defines a matrix multiplication function ``matrix_mul(m_a, m_b)``.
+
+Usage
+=====
+``matrix_mul(...)`` returns a new matrix representing the multiplication of
+``m_a`` by ``m_b``.
+
+::
+
+    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+    >>> m_a = [
+    ...     [1, 2],
+    ...     [3, 4],
+    ... ]
+    >>> m_b = m_a
+    >>> print(matrix_mul(m_a, m_b))
+    [[7, 10], [15, 22]]
+
+::
+
+    >>> m_a = [[1, 2]]
+    >>> m_b = [
+    ...     [3, 4],
+    ...     [5, 6],
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    [[13, 16]]
+
+::
+
+    >>> m_a = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6],
+    ... ]
+    >>> m_b = [
+    ...     [7, 8],
+    ...     [9, 10],
+    ...     [11, 12],
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    [[58, 64], [139, 154]]
+
+::
+
+    >>> m_a = [
+    ...     [1.0, 2.0],
+    ...     [3.0, 4.0],
+    ... ]
+    >>> m_b = [
+    ...     [2.0, 0.0],
+    ...     [1.0, 2.0],
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    [[4.0, 4.0], [10.0, 8.0]]
+
+The function also works with floating-point numbers.

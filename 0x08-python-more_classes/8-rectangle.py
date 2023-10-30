@@ -7,7 +7,6 @@ It is based on the 7-rectangle.py module.
 """
 
 
-
 class Rectangle:
     """A class that defines a rectangle."""
 

@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-"""
-Defines Rectangle class
-"""
 
 class Rectangle:
     """Define a rectangle."""

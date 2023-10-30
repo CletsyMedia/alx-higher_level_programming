@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+This module defines a class Rectangle.
+
+It is based on the 7-rectangle.py module.
+"""
+
 
 
 class Rectangle:

@@ -1,0 +1,81 @@
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+# Test Case 1: Multiply two 2x2 matrices
+>>> m_a = [
+...     [1, 2],
+...     [3, 4]
+... ]
+>>> m_b = [
+...     [1, 2],
+...     [3, 4]
+... ]
+>>> print(lazy_matrix_mul(m_a, m_b))
+[[ 7 10]
+ [15 22]]
+
+# Test Case 2: Multiply a 1x2 matrix by a 2x2 matrix
+>>> m_a = [[1, 2]]
+>>> m_b = [
+...     [3, 4],
+...     [5, 6]
+... ]
+>>> print(lazy_matrix_mul(m_a, m_b))
+[[13 16]]
+
+# Test Case 3: Multiply two matrices with floating-point numbers
+>>> m_a = [
+...     [1.2, 5.5, 6.2],
+...     [4.66, 12.3, -9.2]
+... ]
+>>> m_b = [
+...     [5.0, 3.3],
+...     [-2.9, 4.4],
+...     [7.2, 4.4]
+... ]
+>>> print(lazy_matrix_mul(m_a, m_b))
+[[ 34.69   55.44 ]
+ [-78.61   29.018]]
+
+# Test Case 4: Missing arguments (should fail)
+>>> print(lazy_matrix_mul(m_a))
+Traceback (most recent call last):
+TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_b'
+
+# Test Case 5: Missing arguments (2 arguments required, should fail)
+>>> print(lazy_matrix_mul())
+Traceback (most recent call last):
+TypeError: lazy_matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+# Test Case 6: Invalid matrix dimensions for multiplication (should fail)
+>>> m_a = [
+...     [1, 2],
+...     [3, 4]
+... ]
+>>> m_b = [
+...     [1, 2],
+...     [2, 3],
+...     [4, 5]
+... ]
+>>> print(lazy_matrix_mul(m_a, m_b))
+Traceback (most recent call last):
+ValueError: shapes (2,2) and (3,2) not aligned: 2 (dim 1) != 3 (dim 0)
+
+# Test Case 7: Invalid matrix dimensions for multiplication (empty matrix, should fail)
+>>> print(lazy_matrix_mul([[]], [[5, 6], [7, 8]]))
+Traceback (most recent call last):
+ValueError: shapes (1,0) and (2,2) not aligned: 0 (dim 1) != 2 (dim 0)
+
+# Test Case 8: Invalid operand type (scalar, should fail)
+>>> print(lazy_matrix_mul("not a list", [[1, 2]])
+Traceback (most recent call last):
+ValueError: Scalar operands are not allowed, use '*' instead
+
+# Test Case 9: Invalid operand type (scalar, should fail)
+>>> print(lazy_matrix_mul([[1, 2]], "also not a list"))
+Traceback (most recent call last):
+ValueError: Scalar operands are not allowed, use '*' instead
+
+# Test Case 10: Invalid operand types (None, should fail)
+>>> print(lazy_matrix_mul(None, None)
+Traceback (most recent call last):
+TypeError: Object arrays are not currently supported

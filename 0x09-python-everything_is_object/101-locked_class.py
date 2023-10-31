@@ -4,7 +4,6 @@ LockedClass class
 """
 
 
-class lockedClass:
-  """ setattr """
-  __slots__=['first_name']
-  
+class LockedClass:
+    """ setattr """
+    __slots__ = ["first_name"]

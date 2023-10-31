@@ -1,7 +1,5 @@
 # Python - More Classes and Objects
 
-# Python - More Classes and Objects
-
 ## 0. Simple Rectangle 🖼️
 
 A Rectangle class, canvas for your art,

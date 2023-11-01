@@ -18,8 +18,11 @@ In this code realm, directories bear names inspired by central concepts, each on
 | 2  | [Import & modules](./0x02-python-import_modules)      | Where imports unite, modules harmonize, code's together they dance, hand in hand. 🧩🤝 |
 | 3  | [Data_Structures](./0x03-python-data_structures)      | In the realm of data structure, lists and tuples create a harmonious dance. 🕺💃|
 | 4  | [More_Data_Structures](./0x04-python-more_data_structures)      | Dictionaries and sets, data's gentle ballet, arranging in elegance. 📚💃🩰 |
-| 5  | [Python_Exceptions](./0x05-python-exceptions)      | Where Python gracefully catches the unexpected, a dance of resilience and recovery. 🪣🎭  |
-| 6  | [Python_Classes_Obj](./0x06-python-classes/)      | Where Python's elegance extends to the world of classes, crafting blueprints for creativity. 📜✨ |
+| 5  | [🐍_Exceptions](./0x05-python-exceptions)      | Where Python gracefully catches the unexpected, a dance of resilience and recovery. 🪣🎭  |
+| 6  | [🐍_Classes_Obj](./0x06-python-classes/)      | Where Python's elegance extends to the world of classes, crafting blueprints for creativity. 📜✨ |
+| 7  | [🐍_TDD](./0x07-python-test_driven_development/)      | Python's elegant dance, guided by tests so firm, a tango of correctness and grace. 🩰🎯 |
+| 8  | [🐍_More_Classes](./0x08-python-more_classes/)      | In Python's world, classes multiply and soar, as blueprints of creativity they explore. 📚✨ |
+| 9  | [🐍_Everything_Obj](./0x09-python-everything_is_object/)      | Python's essence in objects it keeps, where everything's an object, and knowledge leaps. 🧬🌟 |
 
 ## Prerequisites 📚✨
 

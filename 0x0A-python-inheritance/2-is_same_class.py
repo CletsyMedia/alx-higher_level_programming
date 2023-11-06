@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Check if the object is exactly an instance of the specified class."""
-
+"""Module has a functction that checks if an object is an instance
+  or a specified class
+"""
 def is_same_class(obj, a_class):
     """
     Args:

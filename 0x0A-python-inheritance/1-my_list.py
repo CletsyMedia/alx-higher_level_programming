@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Contains a class MyList that inherits from list builtin
+"""
+
 
 class MyList(list):
   

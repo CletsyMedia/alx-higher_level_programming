@@ -16,4 +16,4 @@ def is_kind_of_class(obj, a_class):
         bool: if isinstance othewise false
     """
 
-    return True if isinstance(obj, a_class) else False
+    return isinstance(obj, a_class)

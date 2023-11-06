@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Check if the object is an instance of, or if it's an instance of a class
    that inherited from the specified class.
 """

@@ -11,10 +11,5 @@ def load_from_json_file(filename):
         Returns:
             object: Python data structure loaded from the JSON file
     """
-    try:
-        with open(filename, 'r', encoding='utf-8') as file:
-            return json.load(file)
-    except FileNotFoundError:
-        return None
-    except json.JSONDecodeError:
-        return None
+    with open(filename, 'r', encoding='utf-8') as file:
+        return json.load(file)

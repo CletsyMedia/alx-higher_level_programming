@@ -6,13 +6,10 @@
 class BaseGeometry:
     """Geometry Class
     """
-    
+
     def area(self):
-        """Calculate the area of the shape.
+        """Calculates the area
             Returns:
                 float: area
-          Raises:
-            Exception: Always raises an Exception with the message
-                       "area() is not implemented."
         """
         raise Exception("area() is not implemented")

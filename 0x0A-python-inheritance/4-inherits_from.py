@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Module that determines if an object is an instance of a
-class that inherited from the specified class.
+"""Module holds a function that determines if an object is an instance of a
+class that inherited from a specified class
 """
 
 
@@ -15,5 +15,5 @@ def inherits_from(obj, a_class):
         bool: if isinstance othewise false
     """
 
-    return True if isinstance(obj, a_class) and type(obj) is not a_class else False
-
+    return True if isinstance(obj, a_class) and \
+        type(obj) is not a_class else False

@@ -23,6 +23,7 @@ In this code realm, directories bear names inspired by central concepts, each on
 | 7  | [🐍_TDD](./0x07-python-test_driven_development/)      | Python's elegant dance, guided by tests so firm, a tango of correctness and grace. 🩰🎯 |
 | 8  | [🐍_More_Classes](./0x08-python-more_classes/)      | In Python's world, classes multiply and soar, as blueprints of creativity they explore. 📚✨ |
 | 9  | [🐍_Everything_Obj](./0x09-python-everything_is_object/)      | Python's essence in objects it keeps, where everything's an object, and knowledge leaps. 🧬🌟 |
+| 10  | [🐍_Inheritance](./0x0A-python-inheritance)      | Python's wisdom passed through the ages, a lineage of code on history's pages. Parent classes share their grace, a gift to child, in an inheritance embrace. 📜🧾|
 
 ## Prerequisites 📚✨
 

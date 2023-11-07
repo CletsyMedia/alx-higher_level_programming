@@ -4,7 +4,6 @@
 
 
 class BaseGeometry:
-    """An empty class called BaseGeometry.
+    """Class that defines a shape
     """
     pass
-

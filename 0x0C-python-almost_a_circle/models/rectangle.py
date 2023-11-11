@@ -84,9 +84,12 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height
         )
         
-    def update(self, *args):
-        """Updates instance attributes in order via */**args"""
+    def update(self, *args, **kwargs):
+        """Updates instance of no-keyword & keyworded args"""
         if args:
             attributes = ["id", "width", "height", "x", "y"]
             for i in range(len(args)):
                 setattr(self, attributes[i], args[i])
+        elif kwargs:
+          for key, value in kwargs.items():
+              setattr(self, key, value)

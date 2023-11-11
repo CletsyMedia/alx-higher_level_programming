@@ -92,28 +92,31 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draw all Rectangles and Squares using Turtle graphics"""
+        """Draw all the Rectangles and Squares using Turtle graphics module"""
         screen = Screen()
-        screen.title("Drawing Rectangles and Squares")
+        screen.bgcolor("white")
+        screen.title("Turtle Drawing")
 
-        turtle = Turtle()
-
+        # Draw Rectangles
         for rect in list_rectangles:
+            turtle = Turtle()
             turtle.penup()
             turtle.goto(rect.x, rect.y)
             turtle.pendown()
             for _ in range(2):
                 turtle.forward(rect.width)
-                turtle.right(90)
+                turtle.left(90)
                 turtle.forward(rect.height)
-                turtle.right(90)
+                turtle.left(90)
 
+        # Draw Squares
         for square in list_squares:
+            turtle = Turtle()
             turtle.penup()
             turtle.goto(square.x, square.y)
             turtle.pendown()
             for _ in range(4):
                 turtle.forward(square.size)
-                turtle.right(90)
+                turtle.left(90)
 
-        screen.exitonclick()
+        screen.mainloop()

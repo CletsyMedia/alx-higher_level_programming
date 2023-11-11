@@ -91,8 +91,8 @@ class Rectangle(Base):
             for i in range(len(args)):
                 setattr(self, attributes[i], args[i])
         elif kwargs:
-          for key, value in kwargs.items():
-              setattr(self, key, value)
+            for key, value in kwargs.items():
+                setattr(self, key, value)
     
     def to_dictionary(self):
         """Return the dictionary representation of the Rectangle"""
@@ -103,3 +103,7 @@ class Rectangle(Base):
             'height': self.height,
             'width': self.width
         }
+
+    def to_csv_row(self):
+        """Return a list of attributes for CSV serialization"""
+        return [self.id, self.width, self.height, self.x, self.y]

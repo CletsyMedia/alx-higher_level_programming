@@ -45,3 +45,7 @@ class Square(Rectangle):
             'size': self.size,
             'y': self.y
         }
+
+    def to_csv_row(self):
+        """Return a list of attributes for CSV serialization"""
+        return [self.id, self.size, self.x, self.y]

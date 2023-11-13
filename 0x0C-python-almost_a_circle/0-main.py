@@ -1,12 +1,20 @@
 #!/usr/bin/python3
-""" 101-main """
+""" 0-main """
 from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
 
 if __name__ == "__main__":
 
-    list_rectangles = [Rectangle(100, 40), Rectangle(90, 110, 30, 10), Rectangle(20, 25, 110, 80)]
-    list_squares = [Square(35), Square(15, 70, 50), Square(80, 30, 70)]
+    b1 = Base()
+    print(b1.id)
 
-    Base.draw(list_rectangles, list_squares)
+    b2 = Base()
+    print(b2.id)
+
+    b3 = Base()
+    print(b3.id)
+
+    b4 = Base(12)
+    print(b4.id)
+
+    b5 = Base()
+    print(b5.id)

@@ -2,7 +2,7 @@
 """Module for creating Base class"""
 from json import dumps, loads
 import csv
-from turtle import Turtle, Screen  # Import Turtle graphics module
+import turtle  # Import Turtle graphics module
 
 
 class Base:

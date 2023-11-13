@@ -24,6 +24,8 @@ In this code realm, directories bear names inspired by central concepts, each on
 | 8  | [🐍_More_Classes](./0x08-python-more_classes/)      | In Python's world, classes multiply and soar, as blueprints of creativity they explore. 📚✨ |
 | 9  | [🐍_Everything_Obj](./0x09-python-everything_is_object/)      | Python's essence in objects it keeps, where everything's an object, and knowledge leaps. 🧬🌟 |
 | 10  | [🐍_Inheritance](./0x0A-python-inheritance)      | Python's wisdom passed through the ages, a lineage of code on history's pages. Parent classes share their grace, a gift to child, in an inheritance embrace. 📜🧾|
+| 11  | [🐍_Input/Output](./0x0B-python-input_output/)      | Echoes of Python's wisdom, a symphony of input and output. The language speaks, data dances in a rhythmic flow. From keystrokes to displays, a poetic exchange, in the vast landscape of Python's embrace. 🎶💻|
+| 12  | [🐍_Going_in_Circle](./0x0C-python-almost_a_circle/)      | In the dance of pixels and bytes, Python takes a twirl in the circle of creation. Almost a circle, a geometry of code unfolds. With rectangles and squares, the language weaves, crafting a tale of structure in Python's ballet. 🔄📐|
 
 ## Prerequisites 📚✨
 

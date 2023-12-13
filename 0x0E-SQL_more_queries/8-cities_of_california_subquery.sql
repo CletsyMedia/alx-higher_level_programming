@@ -2,7 +2,7 @@
 -- Script to list all cities of California without using JOIN
 
 /* Using the specified database */
--- USE hbtn_0d_usa;
+USE hbtn_0d_usa;
 /* Selecting cities of California using a subquery */
 SELECT *
 FROM cities

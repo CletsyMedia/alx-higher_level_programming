@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const fact = (n) => {
-  if (!isNaN(n) || n < 0) {
+  if (isNaN(n) || n < 0) {
     return 1;
   }
   if (n === 0) {

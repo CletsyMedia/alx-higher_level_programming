@@ -1,26 +1,21 @@
 #!/usr/bin/node
 
-function secBig (arr) {
+function secBig(arr) {
   if (arr.length <= 1) {
     return 0;
   }
 
-  let first = parseInt(arr[0]);
-  let second = parseInt(arr[1]);
+  const sortedArr = arr.sort(function(a, b) {
+    return b - a;
+  });
 
-  for (let i = 2; i < arr.length; i++) {
-    const currNum = parseInt(arr[i]);
-
-    if (currNum > first) {
-      second = first;
-      first = currNum;
-    } else if (currNum > second && currNum !== first) {
-      second = currNum;
-    }
-  }
-
-  return second;
+  return sortedArr[1];
 }
 
-const args = process.argv.slice(2);
-console.log(secBig(args));
+const args = process.argv.slice(2).map(Number);
+
+if (args.length <= 1) {
+  console.log(0);
+} else {
+  console.log(secBig(args));
+}

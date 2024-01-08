@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-function secBig(arr) {
+function secBig (arr) {
   if (arr.length <= 1) {
     return 0;
   }
 
-  const sortedArr = arr.sort(function(a, b) {
+  const sortedArr = arr.sort(function (a, b) {
     return b - a;
   });
 

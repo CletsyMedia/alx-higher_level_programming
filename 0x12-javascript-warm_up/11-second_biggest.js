@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function secBig(arr) {
+function secBig (arr) {
   if (arr.length <= 1) {
     return 0;
   }

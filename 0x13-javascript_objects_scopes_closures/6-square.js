@@ -1,10 +1,17 @@
 #!/usr/bin/node
 
-const Rectangle = require('./5-rectangle');
+const Square5 = require('./5-square');
 
-class Square extends Rectangle {
-  constructor (size) {
-    // Call the constructor of the parent class (Rectangle)
-    super(size, size);
+class Square extends Square5 {
+  charPrint(c) {
+    if (c === undefined) {
+      c = 'X';
+    }
+
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
+    }
   }
 }
+
+module.exports = Square;

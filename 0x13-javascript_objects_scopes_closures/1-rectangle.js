@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 class Rectangle {
-  constructor() {
+  constructor (w, h) {
     this.width = w;
     this.height = h;
   }

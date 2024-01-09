@@ -5,4 +5,3 @@ exports.converter = (base) => {
     return number.toString(base);
   };
 };
-

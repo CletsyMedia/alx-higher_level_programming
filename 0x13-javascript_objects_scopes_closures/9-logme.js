@@ -2,7 +2,7 @@
 
 let counter = 0;
 
-exports.logMe = function (item) {
+exports.logMe = (item) => {
   console.log(`${counter}: ${item}`);
   counter++;
 };

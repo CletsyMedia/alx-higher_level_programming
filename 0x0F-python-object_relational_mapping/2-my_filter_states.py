@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Displays all values in the states table of hbtn_0e_0_usa name matches the arg.
+Displays all values in the states table of hbtn_0e_0_usa.
 """
 
 import MySQLdb
@@ -14,7 +14,8 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     cur.execute(
-        "SELECT * FROM states WHERE name = %s ORDER BY id", (state_name,))
+        "SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id",
+        (state_name,))
 
     [print(row) for row in cur.fetchall()]
 

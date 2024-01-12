@@ -16,10 +16,6 @@ if __name__ == "__main__":
     cur.execute("""SELECT cities.name FROM
                 cities INNER JOIN states ON states.id=cities.state_id
                 WHERE states.name=%s""", (sys.argv[4],))
-    cities = [row[0] for row in cur.fetchall()]
-    if cities:
-        print(*cities, sep=", ")
-    else:
-        print("No cities found for the given state.")
+    print(*[row[0] for row in cur.fetchall()], sep=", ")
     cur.close()
     db.close()

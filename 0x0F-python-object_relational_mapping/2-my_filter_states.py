@@ -14,7 +14,7 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     cur.execute(
-        "SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id",
+        "SELECT * FROM states WHERE name LIKE BINARY %s" %
         (state_name,))
 
     [print(row) for row in cur.fetchall()]

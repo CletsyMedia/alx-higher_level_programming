@@ -1,21 +1,46 @@
 #!/usr/bin/python3
-"""Lists all states from the database hbtn_0e_0_usa"""
+"""Script that lists all states from the database hbtn_0e_0_usa"""
 
 import MySQLdb
 import sys
 
-if __name__ == "__main__":
+def select_states(username, password, db_name):
+    """Selects all states from the specified database and prints the results"""
+
+    # Connect to MySQL server
     db = MySQLdb.connect(
         host="localhost",
-        user=sys.argv[1],
-        passwd=sys.argv[2],
-        db=sys.argv[3],
+        user=username,
+        passwd=password,
+        db=db_name,
         port=3306
     )
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id")
-    rows = cur.fetchall()
+
+    # Create a cursor object to interact with the database
+    cursor = db.cursor()
+
+    # Execute the SELECT query
+    cursor.execute("SELECT * FROM states ORDER BY id")
+
+    # Fetch all the rows
+    rows = cursor.fetchall()
+
+    # Print the results
     for row in rows:
         print(row)
-    cur.close()
+
+    # Close the cursor and database connection
+    cursor.close()
     db.close()
+
+if __name__ == "__main__":
+    # Check if the correct number of arguments is provided
+    if len(sys.argv) != 4:
+        print("Usage: {} <username> <password> <database>".format(sys.argv[0]))
+        sys.exit(1)
+
+    # Extract command line arguments
+    username, password, db_name = sys.argv[1:]
+
+    # Call the select_states function
+    select_states(username, password, db_name)

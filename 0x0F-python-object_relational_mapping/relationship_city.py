@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """ City Module for HBNB project """
 from sqlalchemy import Column, Integer, String, ForeignKey
-from model_state import Base
+from sqlalchemy.ext.declarative import declarative_base
 
+
+Base = declarative_base()
 
 class City(Base):
     """ The city class, contains state ID and name """

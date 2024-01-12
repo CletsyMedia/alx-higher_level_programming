@@ -24,3 +24,4 @@ if __name__ == "__main__":
     else:
         print("Usage: {} <username> <password> <database>"
               .format(sys.argv[0]))
+

@@ -21,7 +21,6 @@ if __name__ == "__main__":
     with urllib.request.urlopen(req) as response:
         # Retrieve X-Request-Id header
         x_request_id = response.headers.get('X-Request-Id')
-        
         # Print the body of the response
         body = response.read()
         print(body.decode('utf-8'))

@@ -1,19 +1,20 @@
 #!/usr/bin/python3
 """
-Module to send a POST request with email as a parameter
+Module to display the value of the X-Request-Id variable found in the header of the response.
 """
 
 import urllib.request
 import urllib.parse
-import sys
+from sys import argv
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    email = sys.argv[2]
+    url = argv[1]
+    email = argv[2]
 
     data = urllib.parse.urlencode({'email': email}).encode('ascii')
     req = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(req) as response:
-        body = response.read().decode('utf-8')
-        print("Your email is: {}".format(body))
+        x_request_id = response.headers.get('X-Request-Id')
+        print("X-Request-Id:", x_request_id)
+        print(response.read().decode('utf-8'))

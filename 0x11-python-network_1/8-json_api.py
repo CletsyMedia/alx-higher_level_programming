@@ -18,4 +18,12 @@ if __name__ == "__main__":
         # Try to parse the JSON response
         json_data = response.json()
 
-        # Check if the JSON
+        # Check if the JSON is not empty
+        if json_data:
+            print("[{}] {}".format(json_data['id'], json_data['name']))
+        else:
+            print("No result")
+
+    except ValueError:
+        # Handle invalid JSON
+        print("Not a valid JSON")

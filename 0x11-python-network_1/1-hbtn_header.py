@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
-Module to fetch https://alx-intranet.hbtn.io/status
+Module to fetch X-Request-Id value from the header of a URL response
 """
 
 import urllib.request
+import sys
 
 if __name__ == "__main__":
-    url = "https://alx-intranet.hbtn.io/status"
+    url = sys.argv[1]
     with urllib.request.urlopen(url) as response:
-        content = response.read()
-        print("Body response:")
-        print(f"    - type: {type(content)}")
-        print(f"    - content: {content}")
-        print(f"    - utf8 content: {content.decode('utf-8')}")
+        header_value = response.getheader('X-Request-Id')
+        print(header_value)

@@ -31,8 +31,9 @@ if __name__ == "__main__":
                 print(f"{sha}: {author_name}")
 
         else:
-            print(f"Error: Unable to fetch commits(HTTP Status Code:
-                  {response.status_code})")
+            print(
+                f"Error: Unable to fetch commits
+                (HTTP Status Code: {response.status_code})")
 
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")

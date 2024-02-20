@@ -13,7 +13,7 @@ const filePath = process.argv[2];
 // Read the content of the file asynchronously
 fs.readFile(filePath, 'utf8', function(error, content) {
     if (error) {
-        console.error('Error reading file:', error);
+        console.error(error);
         process.exit(1);
     }
     console.log(content);
